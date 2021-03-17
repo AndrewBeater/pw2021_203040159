@@ -103,32 +103,32 @@ $books = [
 <body>
 <div class="float-md-start">
 <table class="table table-bordered text-center">
-  <thead>
+<thead>
     <tr>
-      <th scope="col">NO</th>
-      <th scope="col">Film</th>
-      <th scope="col">Judul</th>
-      <th scope="col">Penulis</th>
-      <th scope="col">Terbit</th>
-      <th scope="col">Studio</th>
-      <th scope="col">Score</th>
+        <th scope="col">NO</th>
+        <th scope="col">Film</th>
+        <th scope="col">Judul</th>
+        <th scope="col">Penulis</th>
+        <th scope="col">Terbit</th>
+        <th scope="col">Studio</th>
+        <th scope="col">Score</th>
     </tr>
-  </thead>
-  <tbody>
+</thead>
+<tbody>
     <?php $i = 1 ?>
     <?php foreach($books as $book) : ?>
     <tr>
-      <th scope="row"><?= $i ?></th>
-      <td><img src="img/<?= $book["img"]; ?>"></td>
-      <td><?= $book["Judul"] ?></td>
-      <td><?= $book["Penulis"] ?></td>
-      <td><?= $book["Terbit"] ?></td>
-      <td><?= $book["Produser"] ?></td>
-      <td><?= $book["Score"] ?></td>
+        <th scope="row"><?= $i ?></th>
+        <td><img src="img/<?= $book["img"]; ?>"></td>
+        <td><?= $book["Judul"] ?></td>
+        <td><?= $book["Penulis"] ?></td>
+        <td><?= $book["Terbit"] ?></td>
+        <td><?= $book["Produser"] ?></td>
+        <td><?= $book["Score"] ?></td>
     </tr>
     <?php $i++ ?>
     <?php endforeach; ?>
-  </tbody>
+</tbody>
 </table>
 </div>
 </body>
