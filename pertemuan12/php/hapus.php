@@ -3,12 +3,19 @@
 Muhammad Andrew Rahdi Rizanta
 203040159
 https://github.com/AndrewBeater/pw2021_203040159
-Pertemuan 11 - 22 Mei 2021
-Mempelajari mengenai delete, update, & searching data
+Pertemuan 12 - 22 Mei 2021
+Mempelajari mengenai login & registrasi
 */
 ?>
 
  <?php 
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit;
+}
+
 require 'functions.php';
 $id = $_GET['id'];
 
